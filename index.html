@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="page-title">
+  the end of Conversor de moedas
+  </h1>
+  <p class="page-subtitle">
+    Descubra os valores em dolar U$ e em euro EUR$
+  </p><br>
+
+  <div class="flex-container">
+  <div> <label for="moeda">Insira o valor a ser convertido em Dollar</label><br>
+  <input type="number" id="valorDollar" size="2" /><br>
+  
+  <button type="submit" onclick="converterDollar()">Converter para Dollar</button>
+  <h2 id="valorConvertidoDollar"></h2><br><br>
+  </div>
+    
+<div> </p>
+  <label for="moeda">Insira o valor a ser convertido em Euro</label><br>
+  <input type="number" id="valorEuro" size="2" /><br>
+ <button type="submit"   
+onclick="converterEuro()">Converter para Euro</button> 
+  <h3 id="valorConvertidoEuro"></h3>
+<br><br></div>
+</body>
+<script>
+function converterDollar(){
+  const inseredvalue = document.getElementById("valorDollar").value
+  const dollar = 5.25
+  document.getElementById("valorConvertidoDollar").innerHTML =     "A conversão em dollar é: " + inseredvalue * dollar
+}
+
+function converterEuro(){
+  const inseredvalue = document.getElementById("valorEuro").value
+  const euro = 6.19
+  document.getElementById("valorConvertidoEuro").innerHTML = 
+  `A conversão em Euro é: ${inseredvalue * euro}`
+}
+
+
+
+</script>
+</html>
