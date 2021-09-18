@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <div class="container">
   <h1 class="page-title">
   the end of Conversor de moedas
@@ -18,7 +19,6 @@
   <button type="submit" onclick="converterDollar()">Converter para Dollar</button>
   <h2 id="valorConvertidoDollar"></h2><br><br>
   </div>
-    
 <div> </p>
   <label for="moeda">Insira o valor a ser convertido em Euro</label><br>
   <input type="number" id="valorEuro" size="2" /><br>
@@ -33,6 +33,7 @@ function converterDollar(){
   const dollar = 5.25
   document.getElementById("valorConvertidoDollar").innerHTML =     "A conversão em dollar é: " + inseredvalue * dollar
 }
+
 
 function converterEuro(){
   const inseredvalue = document.getElementById("valorEuro").value
