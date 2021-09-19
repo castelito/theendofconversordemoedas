@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<h1 class="page-title">
+    Neon Genenis Twitch
+    </h1>
+    <h2>
+    <p class="page-subtitle"> Descubra quantos bits ou quantos subs você precisa para atingir 100$ na Twitch
+    </p>
+    </h2>
+  <br><br>
+
+<h3 class="textual">
+  <label for="moeda">Insira quantos BITs você tem na Twitch</label><br>
+  <input type="number" id="bits" size="2" /><br>
+  <label for="moeda">Insira quantos SUBs você tem na Twitch</label><br>
+  <input type="number" id="subs" size="2" /><br>
+  <button type="submit" onclick="converterBits()">Converter</button>
+  <h3 id="valorConvertidoTotal"></h3><br><br>
+
+ <br><br>
+
+
+</body>
+<script>
+    function converterBits(){
+        const userBits = document.getElementById("bits").value;
+        const userSubs = document.getElementById("subs").value;
+        const uservalue = (userBits*1) + (userSubs*48);
+        const bitresult = 10000 - uservalue;
+        const subresult = Math.round(bitresult / 48);
+        document.getElementById("valorConvertidoTotal").innerHTML = `Faltam ${bitresult} bits ou ${subresult} subs para alcançar 100$` ;
+    }
+    
+</script>
+</html>
