@@ -2,34 +2,29 @@ body {
   font-family: "Times New Roman", monospace;
   text-transform: uppercase;
   min-height: 400px;
-  background-image: url("https://images8.alphacoders.com/713/713774.jpg");
-  background-color: #000000;
+  /* background-image: url("https://images8.alphacoders.com/713/713774.jpg"); */
+  background-color: #09000c;
   background-size: 175vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
 
-.flex-container > div {
-  margin: 5%;
-  min-width: 30%;
-  height: 100vh;
-  text-align: center;
-}
 .page-title {
   color: #ffffff;
   text-align: center;
   margin: 0 0 5px;
+  margin-top: 60px;
 }
 
 .page-subtitle {
   color: #ffffff;
   text-align: center;
   margin-top: 5px;
+}
+
+.textual {
+  color: #ffffff;
+  text-align: center;
 }
 
 .page-logo {
@@ -45,6 +40,7 @@ input {
 
 label {
   color: white;
+
 }
 
 button {
@@ -54,7 +50,18 @@ button {
   background: #ffffff;
 }
 
-h2, h3 {
+h1 {
+font-size: 60px;
+
+}
+
+h2 {
   color: #ffffff;
   font-size: 30px;
 }
+h3 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
